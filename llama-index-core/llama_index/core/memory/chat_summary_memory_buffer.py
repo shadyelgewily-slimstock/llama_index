@@ -116,7 +116,7 @@ class ChatSummaryMemoryBuffer(BaseMemory):
         return self.dict()
 
     @classmethod
-    def from_string(cls, json_str: str) -> "ChatMemoryBuffer":
+    def from_string(cls, json_str: str) -> "BaseMemory.ChatMemoryBuffer":
         raise NotImplementedError("This is not yet supported.")
 
     @classmethod
